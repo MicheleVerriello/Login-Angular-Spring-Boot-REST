@@ -1,0 +1,30 @@
+<div class="card" style="margin-top: 30px; margin-left: 30px; margin-right: 30px; border-color: black;">
+  <div class="card-header text-white bg-dark" style="border-bottom-color: black;">
+    Registrati
+  </div>
+  <div class="card-body" style="margin-left: 30px; margin-right: 30px;">
+    <form (ngSubmit)="onSubmit()" #utenteForm="ngForm">
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="nome"><b>Nome</b></label>
+          <input type="text" class="form-control" [(ngModel)]="utente.nome" name="nome" id="nome" placeholder="Nome" #nome="ngModel" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="cognome"><b>Cognome</b></label>
+          <input type="text" class="form-control" [(ngModel)]="utente.cognome" name="cognome" id="cognome" placeholder="Cognome" #cognome="ngModel" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="email"><b>Email</b></label>
+          <input type="email" class="form-control" [(ngModel)]="utente.email" name="email" id="email" placeholder="Email" #email="ngModel" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="password"><b>Password</b></label>
+            <input type="password" class="form-control" [(ngModel)]="utente.password" name="password" id="password" placeholder="Password" #password="ngModel" required>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Registrati</button>
+    </form>
+  </div>
+</div>
