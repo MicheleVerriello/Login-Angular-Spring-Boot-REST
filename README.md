@@ -1,5 +1,6 @@
 # Login-Angular-Spring-Boot-REST
-Login con Angular 7 e Spring Boot utilizzando servizi REST
+Login con Angular 7 e Spring Boot utilizzando servizi REST.
+Il progetto è diviso in due branches (Angular e Spring).
 
 -FUNZIONALITA'
 -
